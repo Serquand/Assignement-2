@@ -10,11 +10,22 @@ header {
     padding: 15px 50px;
     background-color: rgb(4, 4, 28);
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
+header button {
+    color: #555;
+    outline: none;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: white;
+}
 
 .modal {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -68,4 +79,47 @@ h3 {
 
 .modal-content input {
     outline: none;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.todo-container > div {
+    width: 500px;
+    border-radius: 100px;
+    display: flex;
+    border: 1px solid #555;
+    padding: 25px 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-container button {
+    margin-top: 20px;
+    border: 1px solid #555;
+    color: #555;
+    outline: none;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.todo-container p {
+    font-weight:  800;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.todo-container p span {
+    font-weight:  normal;
+    font-style: none;
+    text-decoration: none;
 }
